@@ -17,21 +17,21 @@
 required:
   title:
     client: true
-    default: 'Discourse'
+    default: 'Airware Community Forum'
   site_description:
-    default: ''
+    default: 'A place to discuss all things Airware'
   contact_email:
-    default: ''
+    default: 'community@airware.com'
     type: email
   notification_email:
-    default: 'info@unconfigured.discourse.org'
+    default: 'airware@godynamo.com'
     type: email
   site_contact_username:
-    default: ''
+    default: 'airware'
     type: username
   logo_url:
     client: true
-    default: '/images/d-logo-sketch.png'
+    default: '/images/airware_logo.png'
   logo_small_url:
     client: true
     default: '/images/d-logo-sketch-small.png'
