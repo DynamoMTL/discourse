@@ -1,0 +1,1 @@
+Ember.TEMPLATES["application"] = Ember.Handlebars.compile("{{render \"header\"}}\n  \n  <div id='main-outlet' {{bind-attr class=backgroundClass}}>\n    {{outlet}}\n    {{render \"user-expansion\"}}\n  </div>\n  \n  {{render \"modal\"}}\n  {{render \"topic-entrance\"}}\n  {{render \"composer\"}}");

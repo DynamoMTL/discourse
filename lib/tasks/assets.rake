@@ -2,9 +2,9 @@ task 'assets:precompile:before' do
 
   require 'uglifier'
 
-  unless %w{profile production}.include? Rails.env
-    raise "rake assets:precompile should only be run in RAILS_ENV=production, you are risking unminified assets"
-  end
+  # unless %w{profile production}.include? Rails.env
+  #   raise "rake assets:precompile should only be run in RAILS_ENV=production, you are risking unminified assets"
+  # end
 
   # Ensure we ALWAYS do a clean build
   # We use many .erbs that get out of date quickly, especially with plugins

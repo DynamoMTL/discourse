@@ -1,0 +1,842 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 10, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 20, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 44, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 56, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 66, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 88, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 108, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 125, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 134, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 143, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 152, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 168, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 172, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 183, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 191, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 202, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 210, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 220, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 231, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 255, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 265, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 292, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 321, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 356, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 378, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 389, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 398, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 407, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 418, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/vendor/normalize.scss */
+td,
+th {
+  padding: 0;
+}
+/* These files don't actually exist. They're injected by DiscourseSassImporter. */
+/* line 8, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+html {
+  color: #222222;
+  font: 14px/19px Helvetica, Arial, sans-serif;
+  background-color: white;
+  overflow-y: scroll;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* line 19, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+a {
+  color: #4070de;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 23, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+a:visited {
+  color: #4070de;
+}
+/* line 26, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+a:hover {
+  color: #4070de;
+}
+/* line 29, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+a:active {
+  color: #4070de;
+}
+
+/* line 37, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+hr {
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid #e9e9e9;
+  padding: 0;
+}
+
+/* line 51, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+ul,
+ol,
+dd {
+  margin: 0 0 9px 25px;
+  padding: 0;
+}
+
+/* line 57, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+.cooked ul, .cooked ol, .cooked dd {
+  clear: both;
+}
+
+/* line 63, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
+/* line 71, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 78, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/* line 84, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+pre code {
+  overflow: auto;
+}
+
+/* line 89, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+.row:before, .row:after {
+  display: table;
+  content: "";
+}
+
+/* line 93, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/foundation/base.scss */
+.row:after {
+  clear: both;
+}
+/* These files don't actually exist. They're injected by DiscourseSassImporter. */
+/* line 1, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+a.loading-onebox {
+  background-image: url(/assets/spinner_96.gif);
+  background-position: 0;
+  background-size: 20px;
+  background-height: 25px;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+
+/* line 13, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-result {
+  margin-top: 15px;
+  padding: 12px 25px 12px 12px;
+  border-left: 5px solid #cfcfcf;
+  background: #e9e9e9;
+  font-size: 14px;
+}
+/* line 19, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-result > .source {
+  margin-bottom: 12px;
+  margin-right: 10px;
+  display: block;
+  color: #222222;
+  position: relative;
+  height: 20px;
+}
+/* line 26, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-result > .source .info {
+  position: absolute;
+  font-size: 14px;
+}
+/* line 27, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-result > .source .info a {
+  color: black;
+  text-decoration: none;
+  padding-right: 10px;
+}
+/* line 34, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-result > .source .info img.favicon {
+  margin-right: 3px;
+}
+/* line 41, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-result .onebox-result-body {
+  padding-top: 5px;
+}
+/* line 43, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-result .onebox-result-body img {
+  max-height: 80%;
+  max-width: 25%;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
+/* line 50, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-result .onebox-result-body h3, .onebox-result .onebox-result-body h4 {
+  margin: 0 !important;
+}
+/* line 53, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-result .onebox-result-body code {
+  max-height: 400px;
+}
+/* line 56, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-result .onebox-result-body .metrics {
+  clear: both;
+  padding-bottom: 25px;
+}
+/* line 59, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-result .onebox-result-body .metrics .metric {
+  display: inline-block;
+  padding-left: 33px;
+  float: left;
+}
+
+/* line 71, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-result .onebox-result-body img.verdict {
+  float: none;
+  margin-right: 7px;
+}
+/* line 75, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-result .onebox-result-body img.popcorn {
+  float: none;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+/* line 91, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+aside.onebox {
+  padding: 12px 25px 12px 12px;
+  border-left: 5px solid #cfcfcf;
+  background: #e9e9e9;
+  font-size: 14px;
+}
+/* line 98, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+aside.onebox header a[href] {
+  color: #222222;
+  text-decoration: none;
+}
+/* line 84, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+aside.onebox.stackexchange .source {
+  background-image: url(/assets/favicons/stackexchange.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+/* line 84, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+aside.onebox.twitterstatus .source {
+  background-image: url(/assets/favicons/twitter.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+/* line 84, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+aside.onebox.wikipedia .source {
+  background-image: url(/assets/favicons/wikipedia.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+/* line 84, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+aside.onebox.githubblob .source {
+  background-image: url(/assets/favicons/github.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+/* line 84, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+aside.onebox.amazon .source {
+  background-image: url(/assets/favicons/amazon.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+/* line 111, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+aside.onebox .onebox-body {
+  clear: both;
+}
+/* line 114, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+aside.onebox .onebox-body h3, aside.onebox .onebox-body h4 {
+  font-size: 1.17em;
+  margin: 10px 0 !important;
+}
+/* line 119, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+aside.onebox .onebox-body a[href] {
+  color: #2253c3;
+  text-decoration: none;
+}
+/* line 124, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+aside.onebox .onebox-body a[href]:visited {
+  color: #2253c3;
+}
+/* line 128, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+aside.onebox .onebox-body img {
+  max-height: 80%;
+  max-width: 25%;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 138, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+.onebox-avatar {
+  height: 90px;
+  width: 90px;
+}
+
+/* line 144, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/common/base/onebox.scss */
+blockquote aside.onebox {
+  background: gainsboro;
+  border-left: 5px solid #cacaca;
+}
+
+/* line 8, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post {
+  border-bottom: 1px solid #ddd;
+}
+/* line 11, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post.deleted {
+  background-color: #ffe5e5;
+}
+/* line 15, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post .quote .title {
+  border-left: 5px solid #cfcfcf;
+  background-color: #e9e9e9;
+  padding: 10px 10px 0 12px;
+}
+/* line 19, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post .quote .title .avatar {
+  margin-right: 7px;
+}
+/* line 22, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post ol, article.post ul {
+  clear: none;
+}
+/* line 26, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post blockquote {
+  padding: 10px 8px 10px 13px;
+  margin: 0 0 10px 0;
+  background-color: #e9e9e9;
+  border-left: 5px solid #cfcfcf;
+}
+/* line 31, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post blockquote p {
+  margin: 0 0 10px 0;
+}
+/* line 34, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post blockquote p:last-of-type {
+  margin-bottom: 0;
+}
+/* line 39, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post .post-date {
+  float: right;
+  color: #aaa;
+  font-size: 12px;
+  margin: 10px 4px 0 0;
+}
+/* line 46, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post .author {
+  padding: 10px 5px;
+  float: left;
+  text-align: center;
+}
+/* line 51, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post .author img {
+  max-width: 45px;
+}
+/* line 56, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post h3.username {
+  font-size: 13px;
+  margin: 0 0 10px 0;
+  word-wrap: break-word;
+}
+/* line 61, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post h3.username a {
+  color: #5c5c5c;
+}
+/* line 64, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post h3.username a.staff {
+  background-color: #ffffc2;
+}
+/* line 68, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post h3.username a.new-user {
+  color: #bdbdbd;
+}
+/* line 72, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post h3.username span.title {
+  font-weight: normal;
+  color: #999;
+}
+/* line 78, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post .cooked {
+  padding: 10px 0 20px 0;
+  margin-left: 65px;
+  word-wrap: break-word;
+}
+/* line 83, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post .cooked img {
+  max-width: 100%;
+}
+/* line 86, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+article.post .cooked p {
+  margin: 0 0 1em 0;
+}
+
+/* line 92, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+img.emoji {
+  width: 20px;
+  height: 20px;
+}
+
+/* line 97, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+.post-replies {
+  background-color: #eee;
+  padding: 5px;
+  display: inline-block;
+}
+
+/* line 103, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+.in-reply-to {
+  font-size: 13px;
+  text-align: center;
+  margin: 10px 20px 6px 0;
+  display: inline-block;
+  float: right;
+  color: #0088cc;
+}
+
+/* line 112, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+.replies {
+  font-size: 15px;
+  color: #999;
+}
+
+/* line 117, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+header.embedded {
+  padding: 10px 10px 20px 10px;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 123, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+footer {
+  font-size: 18px;
+}
+/* line 126, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+footer .logo {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+/* line 131, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+footer a[href].button {
+  margin: 10px 0 0 10px;
+}
+
+/* line 136, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+.logo {
+  float: right;
+  max-height: 30px;
+}
+
+/* line 141, /Users/bryanmahoney/src/discourse/app/assets/stylesheets/embed.css.scss */
+a[href].button {
+  background-color: #eee;
+  padding: 5px;
+  display: inline-block;
+}
