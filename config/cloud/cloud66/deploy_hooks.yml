@@ -7,13 +7,6 @@ production:
         apply_during: build_only
         execute: true
         sudo: true
-    after_postgresql:
-    # 2. Copy SQL image to PSQL server
-      - source: /pg_dumps/production-image.sql
-        destination: /tmp/images/production-image.sql
-        target: postgresql
-        apply_during: build_only
-        owner: postgres
     after_checkout:
     # 3. Copy Procfile
       - source: /config/cloud/cloud66/files/Procfile
