@@ -1,0 +1,3 @@
+[submodule "plugins/auth0"]
+	path = plugins/auth0
+	url = https://github.com/auth0/discourse-plugin.git
