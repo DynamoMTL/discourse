@@ -46,6 +46,7 @@ log/
 !/plugins/emoji/
 !/plugins/lazyYT/
 !/plugins/poll/
+!/plugins/auth0/
 /plugins/*/auto_generated/
 
 /spec/fixtures/plugins/my_plugin/auto_generated
