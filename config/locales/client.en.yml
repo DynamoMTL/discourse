@@ -1992,6 +1992,7 @@ en:
           uncategorized: 'Other'
           backups: "Backups"
           login: "Login"
+          auth0: "Auth0"
 
       badges:
         title: Badges
