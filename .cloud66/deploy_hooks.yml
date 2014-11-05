@@ -1,0 +1,18 @@
+production:
+    after_checkout:
+    # 3. Copy Procfile
+      - source: /.cloud66/files/Procfile
+        destination: <%= ENV['RAILS_STACK_PATH'] %>/Procfile
+        target: rails
+        run_on: all_servers
+    # 4. Copy redis settings
+      - source: /.cloud66/files/redis.yml
+        destination: <%= ENV['RAILS_STACK_PATH'] %>/config/redis.yml
+        target: rails
+        parse: false
+        run_on: all_servers
+    # 6. Move thin config to server
+      - source: /.cloud66/files/unicorn.rb
+        destination: <%= ENV['RAILS_STACK_PATH'] %>/config/unicorn.rb
+        target: rails
+        run_on: all_servers
