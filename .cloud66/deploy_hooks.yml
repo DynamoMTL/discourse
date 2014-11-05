@@ -1,4 +1,12 @@
 production:
+    first_thing:
+    # 1. Permissions on postgres box
+      - source: /.cloud66/scripts/permissions.sh
+        destination: /tmp/scripts/permissions.sh
+        target: postgresql
+        apply_during: build_only
+        execute: true
+        sudo: true
     after_checkout:
     # 3. Copy Procfile
       - source: /.cloud66/files/Procfile
@@ -10,6 +18,11 @@ production:
         destination: <%= ENV['RAILS_STACK_PATH'] %>/config/redis.yml
         target: rails
         parse: false
+        run_on: all_servers
+    # 5. Copy production.rb file
+      - source: /.cloud66/files/production.rb
+        destination: <%= ENV['RAILS_STACK_PATH'] %>/config/environments/production.rb
+        target: rails
         run_on: all_servers
     # 6. Move thin config to server
       - source: /.cloud66/files/unicorn.rb
