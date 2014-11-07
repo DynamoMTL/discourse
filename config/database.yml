@@ -42,7 +42,6 @@ production:
   port: 5432
   username: <%= ENV['POSTGRESQL_USERNAME'] %>
 
-
 # You may be surprised production is not here, it is sourced from application.rb using a monkey patch
 # This is done for 2 reasons
 #
